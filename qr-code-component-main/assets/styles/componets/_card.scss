@@ -1,0 +1,56 @@
+@import '../abstract/var';
+
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;  
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+
+    h1.card__title{
+        color: $title-color;
+        font-size: 1.2rem;
+    }
+
+    p.card__text{
+        color: $description-color;
+    }
+
+    .card__img{
+        border-radius: 10px;
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .card{
+        justify-content: center;
+        align-items: center;
+        max-width: 30vw;
+    }
+
+    .main{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:720px){
+    .card{
+        justify-content: center;
+        align-items: center;
+        max-width: 30vw;
+    }
+
+    .main{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
