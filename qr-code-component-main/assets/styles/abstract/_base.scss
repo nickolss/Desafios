@@ -4,3 +4,9 @@ html{
     background-color: $background-color;
     font-family: $font;
 }
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
