@@ -1,11 +1,78 @@
-@import url(https://fonts.google.com/specimen/Hanken+Grotesk);
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
 html {
-  font-family: "Hanken Grotesk";
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 .main {
   height: 100vh;
   width: 100vw;
-  display: grid;
-  place-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card .card__estatistica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  padding: 0 1.5rem;
+  background-image: linear-gradient(to bottom, #7857ff, #2e2be9);
+  border-radius: 0 0 25px 25px;
+}
+.card .card__estatistica .estatistica__titulo {
+  color: #c8c7ff;
+  font-size: 1.2rem;
+}
+.card .card__estatistica .estatistica__circulo {
+  padding: 2rem;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, #4e21ca, rgba(36, 33, 202, 0));
+}
+.card .card__estatistica .estatistica__circulo .circle__titulo {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 800;
+}
+.card .card__estatistica .estatistica__circulo .circle__texto {
+  color: #c8c7ff;
+}
+.card .card__estatistica .estatistica__nota {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 700;
+}
+.card .card__estatistica .estatistica__texto {
+  text-align: center;
+  color: #c8c7ff;
+}
+.card .card__sumario {
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.card .card__sumario .sumario__criterios {
+  width: 100%;
+  background-color: red;
+}
+.card .card__sumario .sumario__criterios .sumario__titulo {
+  color: #303b5a;
+}
+.card .card__sumario .sumario__criterios .criterios__opcoes {
+  display: flex;
+  justify-content: space-between;
+}
+.card .card__sumario .sumario__botao {
+  text-decoration: none;
+  background-color: #303b5a;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 2.5rem;
+  border-radius: 25px;
+}
+.card .card__sumario .sumario__botao:hover {
+  background-image: linear-gradient(to bottom, #7857ff, #2e2be9);
 }/*# sourceMappingURL=style.css.map */

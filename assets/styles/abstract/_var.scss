@@ -1,4 +1,4 @@
-@import url(https://fonts.google.com/specimen/Hanken+Grotesk);
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
 //Colors
 $light-red: #ff5757;
@@ -20,10 +20,14 @@ $light-lavender: #c8c7ff; //Cor font
 $dark-gray-blue: #303b5a; //Botao não ativado
 
 //Fonts
-$font: 'Hanken Grotesk';
-
+$font:  'Hanken Grotesk', sans-serif;
 
 //Font-weight
 $normal: 500;
 $bold: 700;
 $bolder: 800;
+
+//Font size
+$principal-font: 3rem;
+$title-size: 1.8rem;
+$description-size: 1.2rem;
