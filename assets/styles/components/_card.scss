@@ -18,6 +18,7 @@
             font-size: $description-size;
         }
         .estatistica__circulo{
+            margin: 0.5rem 0;
             padding: 2rem;
             border-radius: 50%;
             background-image: linear-gradient(to bottom, $violet-blue, $persian-blue);
@@ -50,7 +51,6 @@
 
         .sumario__criterios{
             width: 100%;
-            background-color: red;
 
             .sumario__titulo{
                 color: $dark-gray-blue;
@@ -59,7 +59,59 @@
             .criterios__opcoes{
                 display: flex;
                 justify-content: space-between;
+                padding: 1rem;
+                border-radius: 10px;
+                margin: 0.5rem 0;
+
+                .opcoes{
+                    display: flex;
+                    gap: 5px;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                &:nth-child(1){
+                    background-color: #fff6f5;
+                    
+                    .opcoes__titulo{
+                        color: $light-red;
+                    }
+                }
+
+                &:nth-child(2){
+                    background-color: #fffbf2;
+
+                    .opcoes__titulo{
+                        color: $orangey-yellow;
+                    }
+                }
+
+                &:nth-child(3){
+                    background-color: #f2fafa;
+
+                    .opcoes__titulo{
+                        color: $green-teal;
+                    }
+                }
+
+                &:nth-child(4){
+                    background-color: #f3f3fd;
+
+                    .opcoes__titulo{
+                        color: $light-royal-blue;
+                    }
+                }
+
+                .opcoes__resultado{
+                    color: $light-lavender;
+
+                    .active{
+                        color: $dark-gray-blue;
+                    }
+                }
             }
+
+            
         }
         
         .sumario__botao{
@@ -72,6 +124,25 @@
         }
         .sumario__botao:hover{
             background-image: linear-gradient(to bottom, $light-slate-blue , $light-royal-blue);
+        }
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 55vw;
+
+        .card__estatistica{
+            border-radius: 25px;
+            min-height: 350px;
+        }
+
+        .card__sumario{
+            box-shadow: 100px 65px 80px rgba(0, 0, 0, 0.2);
+            border-radius: 0 25px 25px 0;
+            max-height: 350px;
         }
     }
 }

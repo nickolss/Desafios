@@ -8,6 +8,12 @@ html {
   width: 100vw;
 }
 
+@media screen and (min-width: 720px) {
+  .main {
+    display: grid;
+    place-items: center;
+  }
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -27,6 +33,7 @@ html {
   font-size: 1.2rem;
 }
 .card .card__estatistica .estatistica__circulo {
+  margin: 0.5rem 0;
   padding: 2rem;
   border-radius: 50%;
   background-image: linear-gradient(to bottom, #4e21ca, rgba(36, 33, 202, 0));
@@ -56,7 +63,6 @@ html {
 }
 .card .card__sumario .sumario__criterios {
   width: 100%;
-  background-color: red;
 }
 .card .card__sumario .sumario__criterios .sumario__titulo {
   color: #303b5a;
@@ -64,6 +70,45 @@ html {
 .card .card__sumario .sumario__criterios .criterios__opcoes {
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0.5rem 0;
+}
+.card .card__sumario .sumario__criterios .criterios__opcoes .opcoes {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.card .card__sumario .sumario__criterios .criterios__opcoes:nth-child(1) {
+  background-color: #fff6f5;
+}
+.card .card__sumario .sumario__criterios .criterios__opcoes:nth-child(1) .opcoes__titulo {
+  color: #ff5757;
+}
+.card .card__sumario .sumario__criterios .criterios__opcoes:nth-child(2) {
+  background-color: #fffbf2;
+}
+.card .card__sumario .sumario__criterios .criterios__opcoes:nth-child(2) .opcoes__titulo {
+  color: #ffb01f;
+}
+.card .card__sumario .sumario__criterios .criterios__opcoes:nth-child(3) {
+  background-color: #f2fafa;
+}
+.card .card__sumario .sumario__criterios .criterios__opcoes:nth-child(3) .opcoes__titulo {
+  color: #00bd91;
+}
+.card .card__sumario .sumario__criterios .criterios__opcoes:nth-child(4) {
+  background-color: #f3f3fd;
+}
+.card .card__sumario .sumario__criterios .criterios__opcoes:nth-child(4) .opcoes__titulo {
+  color: #2e2be9;
+}
+.card .card__sumario .sumario__criterios .criterios__opcoes .opcoes__resultado {
+  color: #c8c7ff;
+}
+.card .card__sumario .sumario__criterios .criterios__opcoes .opcoes__resultado .active {
+  color: #303b5a;
 }
 .card .card__sumario .sumario__botao {
   text-decoration: none;
@@ -75,4 +120,21 @@ html {
 }
 .card .card__sumario .sumario__botao:hover {
   background-image: linear-gradient(to bottom, #7857ff, #2e2be9);
+}
+
+@media screen and (min-width: 720px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 55vw;
+  }
+  .card .card__estatistica {
+    border-radius: 25px;
+    min-height: 350px;
+  }
+  .card .card__sumario {
+    box-shadow: 100px 65px 80px rgba(0, 0, 0, 0.2);
+    border-radius: 0 25px 25px 0;
+    max-height: 350px;
+  }
 }/*# sourceMappingURL=style.css.map */
