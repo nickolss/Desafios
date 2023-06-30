@@ -1,0 +1,18 @@
+.rodape{
+    .rodape__creator{
+        text-align: center;
+        color: $footer-color;
+
+        .rodape__link{
+            color: $footer-color;
+            font-weight: $bold;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .rodape{
+        padding: 0.5rem 0;
+    }
+}
